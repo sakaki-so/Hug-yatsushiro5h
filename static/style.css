@@ -22,6 +22,8 @@ dt,
 dd {
     margin: 0px;
     padding: 0px;
+    font-family: serif;
+    text-shadow: 2px 2px 3px #efb4e7;
 }
 
 body {
@@ -51,14 +53,15 @@ img {
 
 body {
     font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "hiragino kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
-    background-color: rgb(249, 242, 253);
+    background-color: rgb(255, 255, 255);
 }
 
 header {
-    
+    text-shadow: 2px 2px 3px rgb(248, 164, 216);
     position: fixed;
     width: 100%;
     font-family: serif;
+    text-align: left;
 }
 
 /*ハンバーガーメニューの時
@@ -120,20 +123,32 @@ section {
 }
 
 section h1 {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 30px;
     margin: 0px;
     margin-bottom: 50px;
     font-weight: 200;
     text-align: center;
-    font-family: serif;
+    
     display: block;
+}
+
+section h2 {
+    
+    font-size: 17px;
+    margin-bottom: 10px;
 }
 
 .box {
     max-width: 100%;
     margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
+
+
 
 #title_1 {
     background-image: url(../static/img/img/photo-1492725764893-90b379c2b6e7.jpeg);
@@ -207,12 +222,14 @@ footer .copyright {
     width: 80px;
     height: 80px;
     line-height: 80px;
-    border-radius: 50%;
+    border-radius: 20%;
     text-align: center;
     overflow: hidden;
-    background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
+    background-repeat: no-repeat;
+    /*background-image: url(../static/img/img/icon_113430_64.png);*/
+    background-image: linear-gradient(45deg, #da73fa 0%, #de9ffc 100%);
     transition: .4s;
-    margin: 40px;
+    
     }
     
 
@@ -223,11 +240,11 @@ footer .copyright {
     width: 80px;
     height: 80px;
     line-height: 80px;
-    border-radius: 50%;
+    border-radius: 20%;
     text-align: center;
     overflow: hidden;
-    background-image: linear-gradient(45deg,#f5a83c 0%, #fadea9 100%);
+    background-image: linear-gradient(45deg,#67f53c 0%, #acfaa9 100%);
     transition: .4s;
-    font-size: 8px;
-    margin: 30px;
+    font-size: 12px;
+    
 }
