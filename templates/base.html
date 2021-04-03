@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
-
-    <link rel="stylesheet" href="../Hug-yatsushiro5h/static/qr.css" media="screen and (min-width:421px)">
-    <link rel="stylesheet" href="../Hug-yatsushiro5h/static/style.css" media="screen and (max-width:420px)">
+    <link rel="stylesheet" href="../static/style.css" media="screen and (max-width:420px)">
+    <!--<link rel="stylesheet" href="../Hug-yatsushiro5h/static/qr.css" media="screen and (min-width:421px)">
+    <link rel="stylesheet" href="../Hug-yatsushiro5h/static/style.css" media="screen and (max-width:420px)">-->
 
 
 
@@ -47,18 +47,18 @@
         <section id="btn_1">
             <div class="box">
 
-                <a href="./login.html"><input type="button" class="btn-hosii" onclick="location.href=''"
-                        value="欲しい"></a>
+                <a href="./login.html"><input type="button" class="btn-hosii" value="欲しい"></a>
                 <p style="display: inline;">ああああああああ</p>
-                <a href="./kifu.html"><input type="button" class="btn-kifu" onclick="location.href='/fine'"
-                        value="寄付"></a>
+
+                <a href="../templates/kifu.html"><input type="button" class="btn-kifu" value="寄付"></a>
                 <p style="display: inline;">ああああああああ</p>
 
 
             </div>
         </section>
 
-
+        {% block content %}
+        {% endblock %}
         <footer>
             <p class="copyright">SUNABACO＠yatsushiro5h.</p>
         </footer>
