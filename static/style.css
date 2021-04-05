@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 
 
 
@@ -20,10 +20,12 @@ li,
 dl,
 dt,
 dd {
+    
     margin: 0px;
     padding: 0px;
     font-family: serif;
     text-shadow: 2px 2px 3px #efb4e7;
+    line-height: 1.7;
 }
 
 body {
@@ -55,6 +57,7 @@ body {
     font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "hiragino kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
     background-color: rgb(249, 242, 253);
 }
+
 
 header {
     text-shadow: 2px 2px 3px rgb(248, 164, 216);
@@ -186,11 +189,11 @@ section h2 {
 }
 
 #btn_1 {
-    background-image: url(../static/img/);
+    /*background-image: url(../static/img/);*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: rgb(145, 32, 32);
+    color: rgb(0, 0, 0);
     background-attachment: fixed;
 }
 
@@ -248,3 +251,4 @@ footer .copyright {
     font-size: 12px;
     
 }
+

@@ -32,13 +32,18 @@
         <section id="text_1">
 
             <h2>-忙しい方向けの幼児期衣類提供サイト-<br></h2>
-            <p>子供の成長はあっという間ですよね、、</p>
+            <u>
+                <p style="font-size: 14px;line-height:1.7;">子供の成長はあっという間ですよね、、<br>
+                    特に乳幼児の衣類はすぐにサイズが変わるため<br>
+                    買い替えたり処分したりと手間がかかる、、<br>
+                    そんな忙しいあなたへボタン一つで引取りから<br>発送まで行なっているサイトです
+                </p>
+            </u>
 
             <div class="box flex_area">
                 <div>
-                    <h2>画像かな？</h2>
+                    <h2></h2>
                     <p>
-                        何入れる
                     </p>
                 </div>
             </div>
@@ -47,11 +52,14 @@
         <section id="btn_1">
             <div class="box">
 
-                <a href="./login.html"><input type="button" class="btn-hosii" value="欲しい"></a>
-                <p style="display: inline;">ああああああああ</p>
+                <form action="/login" method="GET"><input type="submit" class="btn-hosii" value="欲しい">
+                </form>
+                <p style="display: inline;">デザインやサイズは選べません。<br>
+                    80cm〜100cmまでの上下12着が<br>
+                    ランダムで届きます。</p>
 
-                <a href="../templates/kifu.html"><input type="button" class="btn-kifu" value="寄付"></a>
-                <p style="display: inline;">ああああああああ</p>
+                <form action="/kifu"><input type="submit" class="btn-kifu" value="寄付"></form>
+                <p style="display: inline;"></p>
 
 
             </div>
@@ -60,7 +68,7 @@
         {% block content %}
         {% endblock %}
         <footer>
-            <p class="copyright">SUNABACO＠yatsushiro5h.</p>
+            <p class="copyright">SUNABACO©︎yatsushiro5h.</p>
         </footer>
 
 </body>
