@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 
 
 
@@ -188,14 +188,14 @@ section h2 {
     display: ;
 }
 
-#btn_1 {
-    /*background-image: url(../static/img/);*/
+/*#btn_1 {
+    background-image: url(../static/img/);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: rgb(0, 0, 0);
+    color: rgb(145, 32, 32);
     background-attachment: fixed;
-}
+}*/
 
 #btn_1 p {
     font-size: 14px;

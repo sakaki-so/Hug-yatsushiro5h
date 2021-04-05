@@ -1,0 +1,9 @@
+body{
+	background-color: rgb(253, 237, 250);
+	font-family: serif;
+	text-shadow: 2px 2px 3px rgb(255, 216, 253);
+}
+
+p {
+	font-size: 20px;
+}
