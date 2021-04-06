@@ -14,14 +14,14 @@
         <p>温かいご支援・ご協力を心より<br>
             感謝いたします。</p>
     </div>
-    <form>
+    <form action="/kifu" method="POST">
         <div class="inputs">
             <label class="label">名前</label>
             <input class="input_form" type="text" name="name">
         </div>
         <div class="inputs">
             <label class="label">住所</label>
-            <input class="input_form" type="text" name="age">
+            <input class="input_form" type="text" name="address">
         </div>
         <div class="inputs">
             <label class="label">メールアドレス</label>
@@ -29,11 +29,11 @@
         </div>
         <div class="inputs">
             <label class="label">備考</label>
-            <textarea class="input_form"></textarea>
+            <textarea class="input_form" name="remark"></textarea>
         </div>
         <div class="btn-area">
-            <input type="reset" value="リセット"><a href="../templates/page_not_found.html"><input type="button"
-                    value="送信"></a>
+            <input type="reset" value="リセット">
+            <input type="submit" name="save" value="送信">
         </div>
     </form>
 </body>
