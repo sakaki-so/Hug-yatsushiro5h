@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask, render_template  # listを表示
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -19,9 +19,9 @@ def kifu():
     return render_template('kifu.html')
 
 
-# @app.route('/page_not_found', methods=["GET"])
-# def page_not_found():
-    # return render_template('/page_not_found.html')
+@app.route('/page_not_found', methods=["GET", "POST"])
+def page_not_found():
+    return render_template('/page_not_found.html')
 
 
 if __name__ == "__main__":

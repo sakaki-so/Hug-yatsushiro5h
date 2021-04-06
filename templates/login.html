@@ -10,13 +10,17 @@
 </head>
 
 <body>
-    <h1>※注意事項</h1>
-    <p>デザインやサイズは選べません。<br>
+    <h1 style="color: crimson;">※注意事項</h1>
+    <p style="margin-left: 35px;text-align: left;">デザインやサイズは選べません。<br>
         80cm〜100cmまでの上下12着が<br>
         ランダムで届きます。</p>
     <form>
+        <p>性別<br>
+            <input type="radio" name="q1" value="女の子"> ♀女の子
+            <input type="radio" name="q1" value="男の子"> ♂男の子
+        </p>
         <div class="inputs">
-            <label class="label">お名前</label>
+            <label class="label">名前</label>
             <input class="input_form" type="text" name="name">
         </div>
         <div class="inputs">
@@ -28,7 +32,7 @@
             <input class="input_form" type="email" name="email">
         </div>
         <div class="inputs">
-            <label class="label">お問い合わせ内容</label>
+            <label class="label">備考</label>
             <textarea class="input_form"></textarea>
         </div>
         <div class="btn-area">
