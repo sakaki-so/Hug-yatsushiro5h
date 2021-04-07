@@ -36,15 +36,32 @@ def kifu_post():
     remark = request.form.get("remark")
     conn = sqlite3.connect("Hugtest.db")
     c = conn.cursor()
-    c.execute
-    ("insert into users values(null,?,?,?,?)", (name, address, email, remark))
+    c.execute("insert into users values(null,?,?,?,?)",
+              (name, address, email, remark))
     conn.commit()
     conn.close()
     return "ok"
     # return redirect("/2page_not_found.html")  # 関数を飛ばしたい時リダイレクトを
 
 
-# @app.route('/page_not_found', methods=["GET",])
+@app.route("/login", methods=["POST"])
+def login_post():
+    # 入力ホーム
+    q1 = request.form.get("q1")
+    name = request.form.get("name")
+    address = request.form.get("address")
+    email = request.form.get("email")
+    remark = request.form.get("remark")
+    conn = sqlite3.connect("Hugtest.db")
+    c = conn.cursor()
+    c.execute("insert into present values(null,?,?,?,?,?)",
+              (q1, name, address, email, remark))
+    conn.commit()
+    conn.close()
+    return "ok"
+
+
+# @app.route('/page_not_found', methods=["GET", ])
 # def page_not_found():
     # return render_template('/page_not_found.html')
 
