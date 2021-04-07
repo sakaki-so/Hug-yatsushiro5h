@@ -27,23 +27,6 @@ def kifu():
     # return redirect('/login')
 
 
-@app.route("/kifu", methods=["POST"])
-def kifu_post():
-    # 入力ホーム
-    name = request.form.get("name")
-    address = request.form.get("address")
-    email = request.form.get("email")
-    remark = request.form.get("remark")
-    conn = sqlite3.connect("Hugtest.db")
-    c = conn.cursor()
-    c.execute("insert into users values(null,?,?,?,?)",
-              (name, address, email, remark))
-    conn.commit()
-    conn.close()
-    return "ok"
-    # return redirect("/2page_not_found.html")  # 関数を飛ばしたい時リダイレクトを
-
-
 @app.route("/login", methods=["POST"])
 def login_post():
     # 入力ホーム
@@ -58,12 +41,39 @@ def login_post():
               (q1, name, address, email, remark))
     conn.commit()
     conn.close()
-    return "ok"
+    return redirect("/kifu_not_found")
 
 
-# @app.route('/page_not_found', methods=["GET", ])
-# def page_not_found():
-    # return render_template('/page_not_found.html')
+@app.route('/kifu_not_found', methods=["GET"])
+def kifu_not_found():
+    return render_template('/kifu_not_found.html')
+
+
+@app.route("/kifu", methods=["POST"])
+def kifu_post():
+    # 入力ホーム
+    name = request.form.get("name")
+    address = request.form.get("address")
+    email = request.form.get("email")
+    remark = request.form.get("remark")
+    conn = sqlite3.connect("Hugtest.db")
+    c = conn.cursor()
+    c.execute("insert into users values(null,?,?,?,?)",
+              (name, address, email, remark))
+    conn.commit()
+    conn.close()
+    return redirect("/page_not_found")  # 関数を飛ばしたい時リダイレクトを
+
+
+@app.route('/page_not_found', methods=["GET"])
+def page_not_found():
+    return render_template('/page_not_found.html')
+
+
+# @app.route('/kifu_not_found', methods=["GET"])
+# def kifu_not_found():
+    # return render_template('/kifu_not_found.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
