@@ -65,6 +65,7 @@ header {
     width: 100%;
     font-family: serif;
     text-align: left;
+    font-size: 20px;
 }
 
 /*ハンバーガーメニューの時
@@ -126,9 +127,9 @@ section {
 }
 
 section h1 {
-    font-size: 17px;
-    line-height: 30px;
-    margin: 0px;
+    font-size: 45px;
+    
+    margin: 200px;
     margin-bottom: 50px;
     font-weight: 200;
     text-align: center;
@@ -138,7 +139,7 @@ section h1 {
 
 section h2 {
     
-    font-size: 19px;
+    font-size: 45px;
     margin-bottom: 10px;
 }
 
@@ -157,8 +158,8 @@ section h2 {
     background-image: url(../static/img/img/photo-1492725764893-90b379c2b6e7.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
-    background-size: contain;
+    height: 650px;
+    background-size: cover;
     
 }
 
@@ -182,8 +183,8 @@ section h2 {
 }
 
 #text_1 p {
-    font-size: 17px;
-    line-height:1.7;
+    font-size: 30px;
+    line-height: 1.7;
     font-family: sans-serif;
     
 }
@@ -198,7 +199,7 @@ section h2 {
 }*/
 
 #btn_1 p {
-    font-size: 14px;
+    font-size: 27px;
     line-height: 2;
     margin: 5px;
     text-align: left;
@@ -222,8 +223,8 @@ footer .copyright {
     display: inline-block;
     text-decoration: none;
     color: #FFF;
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 120px;
     line-height: 80px;
     border-radius: 20%;
     text-align: center;
@@ -232,7 +233,7 @@ footer .copyright {
     /*background-image: url(../static/img/img/icon_113430_64.png);*/
     background-image: linear-gradient(45deg, #ff97ec 0%, #de9ffc 100%);
     transition: .4s;
-    font-size: 20px;
+    font-size: 30px;
     }
     
 
@@ -240,18 +241,28 @@ footer .copyright {
     display: inline-block;
     text-decoration: none;
     color: #FFF;
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 120px;
     line-height: 80px;
     border-radius: 20%;
     text-align: center;
     overflow: hidden;
     background-image: linear-gradient(45deg,#67f53c 0%, #acfaa9 100%);
     transition: .4s;
-    font-size: 20px;
+    font-size: 30px;
     
 }
 
+    #add{
+        background:#fcfcff; 
+        padding:15px; 
+        border:1px solid #3b5998; 
+        border-radius:10px; 
+        word-break:break-all; 
+        text-align: left;
+        font-size: 22px;
+}
+
 #add span{
-    font-size: 17px;
+    font-size: 35px;
 }
