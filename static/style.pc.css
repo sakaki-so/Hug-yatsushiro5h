@@ -39,6 +39,8 @@ body {
 
 li {
     list-style: none;
+    font-size: 20px;
+    padding-top: 10px;
 }
 
 a {
@@ -65,8 +67,13 @@ header {
     width: 100%;
     font-family: serif;
     text-align: left;
-    font-size: 20px;
+    background:rgb(252, 230, 233);
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
 }
+    
+
 
 /*ハンバーガーメニューの時
 header .hum_menu {

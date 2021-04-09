@@ -65,6 +65,9 @@ header {
     width: 100%;
     font-family: serif;
     text-align: left;
+    background:rgb(252, 230, 233);
+    display: flex;
+    justify-content: space-between;
 }
 
 /*ハンバーガーメニューの時
