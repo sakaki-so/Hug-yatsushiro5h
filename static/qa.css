@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body,
+h1,
+h3,
+h4,
+h5,
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    
+    margin: 0px;
+    padding: 0px;
+    /*font-family: serif;*/
+    text-shadow: 2px 2px 3px #efb4e7;
+    line-height: 1.7;
+    color: rgb(126, 109, 109);
+}
+
+body {
+    background: #fff;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.4;
+    min-width: 10%;
+    -webkit-text-size-adjust: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    outline: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    opacity: 0.5;
+    border: 0px;
+    vertical-align: bottom;
+}
+
+h2 {
+    padding-top: 60px;
+    margin: 0px;
+}
+
+p {
+    text-align: left;
+    margin: 20px 50px 20px 50px;
+}
+
+body {
+    font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "hiragino kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
+    background-color: rgb(249, 242, 253);
+}
+
+
+header {
+    text-shadow: 2px 2px 3px rgb(248, 164, 216);
+    position: fixed;
+    width: 100%;
+    font-family: serif;
+    text-align: center;
+    background:rgb(252, 230, 233);
+    
+}
+
+
+
+position: relative;
+    border-bottom: 1px solid #ddd;
+    border-left: 5px solid #2b2b2b;
